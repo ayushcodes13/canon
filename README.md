@@ -308,6 +308,8 @@ python3 -m uvicorn api.main:app --host 0.0.0.0 --port 8000
 
 On Vercel, set `GROQ_API_KEY` and `GEMINI_API_KEY` before deploying. `GEMINI_API_KEY` is required to generate the semantic retrieval index; without it, the build skips index generation and the API falls back to lexical retrieval. `VITE_API_BASE_URL` can stay unset for same-origin Vercel deployment because the frontend calls `/api/query`.
 
+**Production workflow check (2026-10-18):** the site renders and `GET /health` returns `ok`, but submitting a sample query from `https://canon.devayushrout.me` currently fails in the browser. Its CORS preflight returns `400 Disallowed CORS origin`. This branch adds the production origin to the API allowlist; the change still needs a production deployment and a fresh browser query before the hosted query workflow can be called working.
+
 ## License
 
 This project is released under the Apache License 2.0. See [`LICENSE`](LICENSE).
