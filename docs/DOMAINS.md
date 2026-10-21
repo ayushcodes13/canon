@@ -14,7 +14,7 @@ That means the cleanest free setup is a static-site host for the frontend plus a
 Use Cloudflare Pages for the frontend:
 
 ```text
-Clausewise-policy.pages.dev
+clausewise-policy.pages.dev
 ```
 
 Why this fits:
@@ -45,7 +45,7 @@ For local development, leave `VITE_API_BASE_URL` empty and let Vite proxy `/api`
 Use `is-a.dev` after the app has a live target:
 
 ```text
-Clausewise.is-a.dev
+clausewise.is-a.dev
 ```
 
 This requires a GitHub PR to the `is-a-dev/register` repository with a DNS record that points to the deployed frontend. Do this only after a stable `pages.dev` or equivalent frontend target exists.

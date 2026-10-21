@@ -86,9 +86,9 @@ const footerColumns = [
   {
     title: "Project",
     links: [
-      ["README", "https://github.com/ayushcodes13/Clausewise#readme"],
-      ["Source code", "https://github.com/ayushcodes13/Clausewise"],
-      ["Run locally", "https://github.com/ayushcodes13/Clausewise#run-locally"]
+      ["README", "https://github.com/ayushcodes13/clausewise#readme"],
+      ["Source code", "https://github.com/ayushcodes13/clausewise"],
+      ["Run locally", "https://github.com/ayushcodes13/clausewise#run-locally"]
     ]
   }
 ];
@@ -366,7 +366,7 @@ answer.format = {
 
           <div className="mt-12 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-6 text-sm text-white/50">
             <span>Built for source-backed policy decisions.</span>
-            <a className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 font-black text-white hover:bg-white/10" href="https://github.com/ayushcodes13/Clausewise">
+            <a className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 font-black text-white hover:bg-white/10" href="https://github.com/ayushcodes13/clausewise">
               <Github className="h-4 w-4" />
               ayushcodes13/Clausewise
             </a>
