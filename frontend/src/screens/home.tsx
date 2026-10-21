@@ -86,9 +86,9 @@ const footerColumns = [
   {
     title: "Project",
     links: [
-      ["README", "https://github.com/ayushcodes13/canon#readme"],
-      ["Source code", "https://github.com/ayushcodes13/canon"],
-      ["Run locally", "https://github.com/ayushcodes13/canon#run-locally"]
+      ["README", "https://github.com/ayushcodes13/Clausewise#readme"],
+      ["Source code", "https://github.com/ayushcodes13/Clausewise"],
+      ["Run locally", "https://github.com/ayushcodes13/Clausewise#run-locally"]
     ]
   }
 ];
@@ -97,9 +97,9 @@ export function HomePage() {
   return (
     <main className="min-h-screen bg-[var(--bg)] text-[var(--ink)]">
       <header className="motion-fade sticky top-3 z-30 mx-auto grid w-[min(1120px,calc(100%-32px))] grid-cols-[1fr_auto_1fr] items-center rounded-2xl border border-[var(--line)] bg-white/90 p-2 shadow-lg shadow-black/5 backdrop-blur max-md:grid-cols-[1fr_auto]">
-        <a className="flex items-center gap-3 font-black" href="#top" aria-label="CANON home">
+        <a className="flex items-center gap-3 font-black" href="#top" aria-label="Clausewise home">
           <span className="grid h-11 w-11 place-items-center rounded-2xl border border-[#d8c58a]/50 bg-[#0b0f14] shadow-md">
-            <img src="/canon-logo.svg" alt="" className="h-9 w-9 rounded-xl" />
+            <img src="/Clausewise-logo.svg" alt="" className="h-9 w-9 rounded-xl" />
           </span>
           <span className="leading-tight">
             <span className="block">{productConfig.name}</span>
@@ -121,7 +121,7 @@ export function HomePage() {
       <section id="top" className="mx-auto flex w-[min(1120px,calc(100%-32px))] scroll-mt-28 flex-col items-center gap-7 py-12">
         <div className="flex max-w-5xl flex-col items-center text-center">
           <div className="motion-rise inline-flex items-center gap-3 rounded-full border border-[var(--line)] bg-[var(--soft)] px-3 py-2 text-sm font-bold text-[var(--muted)]">
-            <img src="/canon-logo.svg" alt="" className="h-6 w-6 rounded-lg" />
+            <img src="/Clausewise-logo.svg" alt="" className="h-6 w-6 rounded-lg" />
             <span className="status-pulse rounded-full bg-emerald-100 px-2 py-1 text-xs uppercase text-emerald-700">New</span>
             Python AI backend with a TanStack frontend
           </div>
@@ -236,7 +236,7 @@ answer.format = {
         <div>
           <p className="eyebrow">Workflow</p>
           <h2 className="section-title">Ask anything. Answer only when the evidence is good.</h2>
-          <p className="mt-4 text-lg leading-8 text-[var(--muted)]">CANON separates routing, retrieval, governance, generation, and grounding so every response has an audit trail.</p>
+          <p className="mt-4 text-lg leading-8 text-[var(--muted)]">Clausewise separates routing, retrieval, governance, generation, and grounding so every response has an audit trail.</p>
         </div>
         <div className="grid grid-cols-2 gap-3 max-sm:grid-cols-1">
           {[
@@ -284,7 +284,7 @@ answer.format = {
               <p className="text-xs font-black uppercase text-[#d8c58a]">Control layer</p>
               <h3 className="mt-3 max-w-md text-3xl font-black leading-tight">The model is downstream from policy authority.</h3>
               <p className="mt-3 leading-7 text-white/65">
-                CANON first decides what rules apply and whether the request is allowed. The LLM only writes after the retrieved evidence and verdict are available.
+                Clausewise first decides what rules apply and whether the request is allowed. The LLM only writes after the retrieved evidence and verdict are available.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-3 max-sm:grid-cols-1">
@@ -308,7 +308,7 @@ answer.format = {
             <div>
               <div className="flex items-center gap-3">
                 <span className="grid h-12 w-12 place-items-center rounded-2xl border border-[#d8c58a]/60 bg-[#0b0f14] shadow-lg shadow-black/20">
-                  <img src="/canon-logo.svg" alt="" className="h-10 w-10 rounded-xl" />
+                  <img src="/Clausewise-logo.svg" alt="" className="h-10 w-10 rounded-xl" />
                 </span>
                 <div>
                   <strong className="block text-xl">{productConfig.name}</strong>
@@ -316,7 +316,7 @@ answer.format = {
                 </div>
               </div>
               <p className="mt-5 max-w-md text-base leading-7 text-white/65">
-                CANON routes policy questions through ownership, retrieval, governance, and grounding before any model response is allowed back to the user.
+                Clausewise routes policy questions through ownership, retrieval, governance, and grounding before any model response is allowed back to the user.
               </p>
               <div className="mt-6 flex flex-wrap gap-2">
                 {["SAFE", "REFUSE", "ESCALATE", "GROUNDED"].map((item) => (
@@ -366,9 +366,9 @@ answer.format = {
 
           <div className="mt-12 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-6 text-sm text-white/50">
             <span>Built for source-backed policy decisions.</span>
-            <a className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 font-black text-white hover:bg-white/10" href="https://github.com/ayushcodes13/canon">
+            <a className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 font-black text-white hover:bg-white/10" href="https://github.com/ayushcodes13/Clausewise">
               <Github className="h-4 w-4" />
-              ayushcodes13/canon
+              ayushcodes13/Clausewise
             </a>
           </div>
         </div>

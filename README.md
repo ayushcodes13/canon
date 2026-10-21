@@ -1,15 +1,15 @@
 <div align="center">
 
-<img src="public/canon-logo.svg" alt="CANON logo" width="120" />
+<img src="public/Clausewise-logo.svg" alt="Clausewise logo" width="120" />
 
-# CANON
+# Clausewise
 
 **Policy-governed intelligence for decisions that need proof.**
 
 ***Take organizational rules, retrieve the authoritative version, enforce constraints, and only then let AI answer.***
 
 [![React](https://img.shields.io/badge/React-19-149ECA?style=for-the-badge&logo=react&logoColor=white)](https://react.dev/)
-[![Live Demo](https://img.shields.io/badge/LIVE-canon.devayushrout.me-16A34A?style=for-the-badge&logo=vercel&logoColor=white)](https://canon.devayushrout.me)
+[![Live Demo](https://img.shields.io/badge/LIVE-Clausewise.devayushrout.me-16A34A?style=for-the-badge&logo=vercel&logoColor=white)](https://Clausewise.devayushrout.me)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![TanStack](https://img.shields.io/badge/TanStack-Router%20%2B%20Query-FF4154?style=for-the-badge)](https://tanstack.com/)
 [![Vite](https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev/)
@@ -18,31 +18,31 @@
 [![Gemini](https://img.shields.io/badge/Gemini-Embeddings-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)](https://ai.google.dev/)
 [![Groq](https://img.shields.io/badge/Groq-Inference-F55036?style=for-the-badge)](https://groq.com/)
 
-[Live Demo](https://canon.devayushrout.me) | [Overview](#overview) | [Demo](#demo) | [Architecture](#architecture) | [Run Locally](#run-locally) | [Deployment](#deployment)
+[Live Demo](https://Clausewise.devayushrout.me) | [Overview](#overview) | [Demo](#demo) | [Architecture](#architecture) | [Run Locally](#run-locally) | [Deployment](#deployment)
 
-**Deployed CANON:** [`canon.devayushrout.me`](https://canon.devayushrout.me)
+**Deployed Clausewise:** [`Clausewise.devayushrout.me`](https://Clausewise.devayushrout.me)
 
 </div>
 
 ---
 
-<img src="docs/assets/canon-home.png" alt="CANON homepage showing the policy-governed intelligence interface" width="100%" />
+<img src="docs/assets/Clausewise-home.png" alt="Clausewise homepage showing the policy-governed intelligence interface" width="100%" />
 
 ## Overview
 
-CANON is a governance-gated policy intelligence system for teams that need internal policy answers with traceable evidence. It does not treat the model as the source of truth. Instead, it treats approved policy documents as the canonical authority and uses the model only after routing, retrieval, and governance checks have already narrowed the answer space.
+Clausewise is a governance-gated policy intelligence system for teams that need internal policy answers with traceable evidence. It does not treat the model as the source of truth. Instead, it treats approved policy documents as the canonical authority and uses the model only after routing, retrieval, and governance checks have already narrowed the answer space.
 
 The system is designed for organizational policy workflows where a generic chatbot would be risky: refund rules, access controls, support exceptions, security escalation, compliance-sensitive procedures, and versioned operating policies.
 
 The current production path is a **Vite + React 19 + TanStack frontend** calling a **Python API** for policy intelligence. Groq handles classification/generation and Gemini handles embeddings from the Python layer. The repository has been cleaned so only the active frontend, Python API, policy corpus, docs, and evaluation tooling remain.
 
-CANON can currently answer from the included markdown policy corpus, return sources and supporting clauses, refuse invalid or policy-disallowed requests, and escalate sensitive cases. It is still a project/demo system, not a substitute for legal, compliance, or human policy approval.
+Clausewise can currently answer from the included markdown policy corpus, return sources and supporting clauses, refuse invalid or policy-disallowed requests, and escalate sensitive cases. It is still a project/demo system, not a substitute for legal, compliance, or human policy approval.
 
 ## Demo
 
-Live production demo: [`canon.devayushrout.me`](https://canon.devayushrout.me)
+Live production demo: [`Clausewise.devayushrout.me`](https://Clausewise.devayushrout.me)
 
-<img src="docs/assets/canon-console.png" alt="CANON live policy console with sample questions and query input" width="100%" />
+<img src="docs/assets/Clausewise-console.png" alt="Clausewise live policy console with sample questions and query input" width="100%" />
 
 ```text
 Question
@@ -85,7 +85,7 @@ Example response shape:
 | AI Layer | Python calls Groq chat completions and Gemini embeddings |
 | Retrieval | Python retrieval over static JSON embeddings, with lexical local fallback |
 | Data | Markdown policy documents under `data/raw_docs` |
-| Deployment | Vercel production at [`canon.devayushrout.me`](https://canon.devayushrout.me) |
+| Deployment | Vercel production at [`Clausewise.devayushrout.me`](https://Clausewise.devayushrout.me) |
 | Status | Portfolio-grade MVP with deterministic governance gates |
 
 ## Key Features
@@ -99,15 +99,15 @@ Example response shape:
 
 ## Product Surface
 
-<img src="docs/assets/canon-product.jpg" alt="CANON product section showing the decision trace and response contract" width="100%" />
+<img src="docs/assets/Clausewise-product.jpg" alt="Clausewise product section showing the decision trace and response contract" width="100%" />
 
 ## Workflow
 
-<img src="docs/assets/canon-workflow.png" alt="CANON workflow section showing the evidence-gated policy pipeline" width="100%" />
+<img src="docs/assets/Clausewise-workflow.png" alt="Clausewise workflow section showing the evidence-gated policy pipeline" width="100%" />
 
 ## Architecture
 
-<img src="docs/assets/canon-architecture.jpg" alt="CANON architecture section showing the internal governed answer path" width="100%" />
+<img src="docs/assets/Clausewise-architecture.jpg" alt="Clausewise architecture section showing the internal governed answer path" width="100%" />
 
 ```text
 Browser
@@ -149,7 +149,7 @@ Read the full architecture notes in [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.m
 
 ## Why This Exists
 
-CANON exists because policy Q&A should not behave like an unconstrained chatbot. The system separates the decision path into explicit stages: detect what the user is asking, scope the policy owners, retrieve authoritative documents, apply governance rules, generate only from retrieved evidence, and return an answer with sources.
+Clausewise exists because policy Q&A should not behave like an unconstrained chatbot. The system separates the decision path into explicit stages: detect what the user is asking, scope the policy owners, retrieve authoritative documents, apply governance rules, generate only from retrieved evidence, and return an answer with sources.
 
 The current implementation keeps the browser app light and pushes the intelligence runtime into Python. Embeddings are generated through Gemini, model reasoning runs through Groq, and retrieval uses a static JSON index plus deterministic fallbacks so the project remains understandable and deployable.
 
@@ -158,8 +158,8 @@ The current implementation keeps the browser app light and pushes the intelligen
 Clone the repository:
 
 ```bash
-git clone https://github.com/ayushcodes13/canon.git
-cd canon
+git clone https://github.com/ayushcodes13/Clausewise.git
+cd Clausewise
 ```
 
 Install dependencies:
@@ -266,27 +266,27 @@ docs/
 - Add richer evaluation tests for refusals, escalations, and grounding.
 - Add durable production logging for audit trails.
 - Keep the public Vercel demo and custom domain current with releases.
-- Add a clean free subdomain such as `canon-policy.pages.dev` or `canon.is-a.dev`.
+- Add a clean free subdomain such as `Clausewise-policy.pages.dev` or `Clausewise.is-a.dev`.
 
 ## Screenshots
 
-<img src="docs/assets/canon-home.png" alt="CANON live homepage screenshot" width="100%" />
+<img src="docs/assets/Clausewise-home.png" alt="Clausewise live homepage screenshot" width="100%" />
 
-<img src="docs/assets/canon-console.png" alt="CANON live console screenshot" width="100%" />
+<img src="docs/assets/Clausewise-console.png" alt="Clausewise live console screenshot" width="100%" />
 
-<img src="docs/assets/canon-workflow.png" alt="CANON live workflow screenshot" width="100%" />
+<img src="docs/assets/Clausewise-workflow.png" alt="Clausewise live workflow screenshot" width="100%" />
 
-<img src="docs/assets/canon-architecture.jpg" alt="CANON live architecture screenshot" width="100%" />
+<img src="docs/assets/Clausewise-architecture.jpg" alt="Clausewise live architecture screenshot" width="100%" />
 
 ## Deployment
 
 Live production deployment:
 
 ```text
-https://canon.devayushrout.me
+https://Clausewise.devayushrout.me
 ```
 
-CANON is configured for a single Vercel project. Vercel builds the Vite frontend, generates the Gemini embedding index during deployment, and routes `/api/*` to the Python FastAPI app through `api/index.py`.
+Clausewise is configured for a single Vercel project. Vercel builds the Vite frontend, generates the Gemini embedding index during deployment, and routes `/api/*` to the Python FastAPI app through `api/index.py`.
 
 For local frontend-only verification:
 

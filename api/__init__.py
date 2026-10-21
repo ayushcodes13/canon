@@ -1,1 +1,1 @@
-"""Python API package for CANON."""
+"""Python API package for Clausewise."""
