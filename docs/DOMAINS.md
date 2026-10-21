@@ -29,13 +29,13 @@ Why this fits:
 Host the Python API separately on a Python-capable platform such as Render, Fly.io, Railway, or a VPS:
 
 ```text
-https://Clausewise-policy-api.<host>.com
+https://clausewise-policy-api.<host>.com
 ```
 
 Then set this during frontend build:
 
 ```bash
-VITE_API_BASE_URL=https://Clausewise-policy-api.<host>.com
+VITE_API_BASE_URL=https://clausewise-policy-api.<host>.com
 ```
 
 For local development, leave `VITE_API_BASE_URL` empty and let Vite proxy `/api` to `http://127.0.0.1:8000`.
