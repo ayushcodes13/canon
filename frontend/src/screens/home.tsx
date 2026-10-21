@@ -99,7 +99,7 @@ export function HomePage() {
       <header className="motion-fade sticky top-3 z-30 mx-auto grid w-[min(1120px,calc(100%-32px))] grid-cols-[1fr_auto_1fr] items-center rounded-2xl border border-[var(--line)] bg-white/90 p-2 shadow-lg shadow-black/5 backdrop-blur max-md:grid-cols-[1fr_auto]">
         <a className="flex items-center gap-3 font-black" href="#top" aria-label="Clausewise home">
           <span className="grid h-11 w-11 place-items-center rounded-2xl border border-[#d8c58a]/50 bg-[#0b0f14] shadow-md">
-            <img src="/Clausewise-logo.svg" alt="" className="h-9 w-9 rounded-xl" />
+            <img src="/clausewise-logo.svg" alt="" className="h-9 w-9 rounded-xl" />
           </span>
           <span className="leading-tight">
             <span className="block">{productConfig.name}</span>
@@ -121,7 +121,7 @@ export function HomePage() {
       <section id="top" className="mx-auto flex w-[min(1120px,calc(100%-32px))] scroll-mt-28 flex-col items-center gap-7 py-12">
         <div className="flex max-w-5xl flex-col items-center text-center">
           <div className="motion-rise inline-flex items-center gap-3 rounded-full border border-[var(--line)] bg-[var(--soft)] px-3 py-2 text-sm font-bold text-[var(--muted)]">
-            <img src="/Clausewise-logo.svg" alt="" className="h-6 w-6 rounded-lg" />
+            <img src="/clausewise-logo.svg" alt="" className="h-6 w-6 rounded-lg" />
             <span className="status-pulse rounded-full bg-emerald-100 px-2 py-1 text-xs uppercase text-emerald-700">New</span>
             Python AI backend with a TanStack frontend
           </div>
@@ -308,7 +308,7 @@ answer.format = {
             <div>
               <div className="flex items-center gap-3">
                 <span className="grid h-12 w-12 place-items-center rounded-2xl border border-[#d8c58a]/60 bg-[#0b0f14] shadow-lg shadow-black/20">
-                  <img src="/Clausewise-logo.svg" alt="" className="h-10 w-10 rounded-xl" />
+                  <img src="/clausewise-logo.svg" alt="" className="h-10 w-10 rounded-xl" />
                 </span>
                 <div>
                   <strong className="block text-xl">{productConfig.name}</strong>
@@ -368,7 +368,7 @@ answer.format = {
             <span>Built for source-backed policy decisions.</span>
             <a className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 font-black text-white hover:bg-white/10" href="https://github.com/ayushcodes13/clausewise">
               <Github className="h-4 w-4" />
-              ayushcodes13/Clausewise
+              ayushcodes13/clausewise
             </a>
           </div>
         </div>
