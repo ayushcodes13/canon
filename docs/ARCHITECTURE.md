@@ -1,4 +1,4 @@
-# CANON Architecture
+# Clausewise Architecture
 
 ## Production App
 

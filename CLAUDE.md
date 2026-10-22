@@ -1,6 +1,6 @@
 # Claude Project Guide
 
-This project is **CANON**: a policy-governed intelligence system that answers internal policy questions only after routing, retrieval, governance, and grounding checks.
+This project is **Clausewise**: a policy-governed intelligence system that answers internal policy questions only after routing, retrieval, governance, and grounding checks.
 
 Use `AGENTS.md` as the canonical source for repository instructions. This file exists so Claude-based coding sessions can quickly find the same operating rules.
 

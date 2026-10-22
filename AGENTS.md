@@ -1,6 +1,6 @@
 # Agent Instructions
 
-This repository is **CANON**, a governance-gated policy intelligence system. Treat approved policy documents as the canonical source of truth and preserve the separation between UI, retrieval, governance, and generation.
+This repository is **Clausewise**, a governance-gated policy intelligence system. Treat approved policy documents as the canonical source of truth and preserve the separation between UI, retrieval, governance, and generation.
 
 ## Current Production Path
 
@@ -21,7 +21,7 @@ Do not reintroduce deleted prototype app surfaces or inactive AI backends unless
 
 ## Product Principles
 
-- CANON answers only from approved policy evidence.
+- Clausewise answers only from approved policy evidence.
 - Owner scoping must happen before retrieval results are used.
 - Latest-version policy documents should dominate older versions.
 - Governance decisions must remain explicit: `SAFE`, `REFUSE_POLICY`, `REFUSE_INVALID`, or `ESCALATE`.
@@ -103,7 +103,7 @@ Deploy as one Vercel project. The frontend is emitted to `dist/`, and `/api/*` r
 - Keep cards at `16px` radius or below unless there is a strong visual reason.
 - Keep text readable on mobile; avoid fixed-width content that can overflow.
 - Use `frontend/src/lib/product.ts` for product name, tagline, domains, and sample prompts.
-- Do not hardcode `CANON` or the brand mark in components if it can come from config.
+- Do not hardcode `Clausewise` or the brand mark in components if it can come from config.
 
 ## Code Guidelines
 

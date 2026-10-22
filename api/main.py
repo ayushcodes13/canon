@@ -5,7 +5,7 @@ from pydantic import BaseModel, Field
 from api.pipeline import run_pipeline
 
 
-app = FastAPI(title="CANON Policy Intelligence API")
+app = FastAPI(title="Clausewise Policy Intelligence API")
 
 app.add_middleware(
     CORSMiddleware,
@@ -27,7 +27,7 @@ class QueryRequest(BaseModel):
 
 @app.get("/health")
 def health() -> dict:
-    return {"status": "ok", "service": "canon-python-api"}
+    return {"status": "ok", "service": "Clausewise-python-api"}
 
 
 @app.post("/api/query")
